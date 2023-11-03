@@ -1,1 +1,3 @@
-# klasifikasiPKH
+Sistem Informasi Penentu Kelayakan Penerima Program Keluarga Harapan (PKH) dengan menggunakan metode Naive Bayes adalah aplikasi atau platform yang memanfaatkan algoritma klasifikasi Naive Bayes untuk menilai kelayakan dan eligibilitas rumah tangga atau keluarga yang ingin menerima manfaat dari program sosial PKH. PKH adalah program pemerintah yang bertujuan memberikan bantuan tunai kepada rumah tangga miskin dan rentan guna membantu mereka memenuhi kebutuhan dasar seperti pendidikan, kesehatan, dan gizi.
+
+Sistem ini mengintegrasikan metode klasifikasi Naive Bayes, yang adalah salah satu algoritma pembelajaran mesin yang digunakan untuk mengkategorikan data berdasarkan probabilitas. 
