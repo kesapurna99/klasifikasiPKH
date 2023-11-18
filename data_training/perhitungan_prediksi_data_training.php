@@ -36,10 +36,10 @@
       <thead class=" text-white">
         <tr> 
             <th scope="col" rowspen="2" class="align-middle text center">Total Data</th>
-            <th scope="col" rowspen="2" class="align-middle text center">Mahasiswa penerimang terpilih</th>
-            <th scope="col" rowspen="2" class="align-middle text center">Mahasiswa penerimang BUKAN terpilih</th>
-            <th scope="col" rowspen="2" class="text center">Probabilitas Mahasiswa PENERIMAng terpilih</th>
-            <th scope="col" rowspen="2" class="text center">Probabilitas Mahasiswa yang BUKAN terpilih</th>
+            <th scope="col" rowspen="2" class="align-middle text center">Warga Penerima</th>
+            <th scope="col" rowspen="2" class="align-middle text center">Warga Bukan Penerima</th>
+            <th scope="col" rowspen="2" class="text center">Probabilitas Warga Diterima</th>
+            <th scope="col" rowspen="2" class="text center">Probabilitas Warga Tidak Diterima</th>
         </tr>
         <tr>
             <th>n</th>
@@ -68,8 +68,8 @@
             <div>
               <h4>Keterangan : </h4>
               
-              <h6>Ny adalah jumlah data mahasiswa terpilih</h6>
-              <h6>Nx Adalah jumlah data mahasiwa BUKAN terpilih</h6>
+              <h6>Ny adalah jumlah data Warga Penerima</h6>
+              <h6>Nx Adalah jumlah data Warga Bukan Penerima</h6>
             </div>
             <hr>
       <?php foreach ($c as $c) { ?> 
@@ -81,10 +81,10 @@
                     <thead class=" text-white">
                       <tr>
                         <th scope="col" rowspen="2" class="align-middle text center"><?= strtoupper($c) ?></th>
-                        <th scope="col" rowspen="2" class="text center">Mahasiswa yang terpilih</th>
-                        <th scope="col" rowspen="2" class="text center">Mahasiswa yang BUKAN terpilih</th>
-                        <th scope="col" rowspen="2" class="text center">Probabilitas Mahasiswa yang terpilih</th>
-                        <th scope="col" rowspen="2" class="text center">Probabilitas Mahasiswa yang BUKAN terpilih</th>
+                        <th scope="col" rowspen="2" class="text center">Warga Penerima</th>
+                        <th scope="col" rowspen="2" class="text center">Warga Bukan Penerima</th>
+                        <th scope="col" rowspen="2" class="text center">Probabilitas Penerima</th>
+                        <th scope="col" rowspen="2" class="text center">Probabilitas Bukan Penerima</th>
                       </tr>
                       <tr>
                           <th></th>
@@ -140,22 +140,22 @@
                             <th colspan="2">status_pkh</th>
                           </tr>
                           <tr>
-                            <th>Terpilih</th>
-                            <th>BUKAN Terpilih</th>
-                            <th>Terpilih</th>
-                            <th>BUKAN Terpilih</th>
-                            <th>Terpilih</th>
-                            <th>BUKAN Terpilih</th>
-                            <th>Terpilih</th>
-                            <th>BUKAN Terpilih</th>
-                            <th>Terpilih</th>
-                            <th>BUKAN Terpilih</th>
-                            <th>Terpilih</th>
-                            <th>BUKAN Terpilih</th>
-                            <th>Terpilih</th>
-                            <th>BUKAN Terpilih</th>
-                            <th>Terpilih</th>
-                            <th>BUKAN Terpilih</th>
+                            <th>Penerima</th>
+                            <th>BUKAN Penerima</th>
+                            <th>Penerima</th>
+                            <th>BUKAN Penerima</th>
+                            <th>Penerima</th>
+                            <th>BUKAN Penerima</th>
+                            <th>Penerima</th>
+                            <th>BUKAN Penerima</th>
+                            <th>Penerima</th>
+                            <th>BUKAN Penerima</th>
+                            <th>Penerima</th>
+                            <th>BUKAN Penerima</th>
+                            <th>Penerima</th>
+                            <th>BUKAN Penerima</th>
+                            <th>Penerima</th>
+                            <th>BUKAN Penerima</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -239,7 +239,7 @@
                             <td><?= $jenis_lantai ?></td>
                             <td><?= $jml_penghasilan ?></td>
                             <td><?= $stts_kepemilikan_rumah ?></td>
-                            <td><?= $status_pkh ?></td>
+                            <td><?= $status_pkh ?>/<?php if($status_pkh == "PENERIMA"){ echo "LAYAK";} else { echo "Tidak Layak"; }; ?></td>
                           </tr>
                         </tbody>
                       </table>
