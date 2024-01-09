@@ -108,10 +108,10 @@
       <thead class=" text-white">
         <tr> 
         <th scope="col" rowspen="2" class="align-middle text center">Total Data</th>
-            <th scope="col" rowspen="2" class="align-middle text center"> Calon terpilih</th>
-            <th scope="col" rowspen="2" class="align-middle text center"> Calon tidak terpilih</th>
-            <th scope="col" rowspen="2" class="text center">Probabilitas  Calon terpilih</th>
-            <th scope="col" rowspen="2" class="text center">Probabilitas  Calon BUKAN terpilih</th>
+            <th scope="col" rowspen="2" class="align-middle text center"> Warga Penerima</th>
+            <th scope="col" rowspen="2" class="align-middle text center"> Warga Bukan Penerima</th>
+            <th scope="col" rowspen="2" class="text center">Probabilitas  Warga Penerima</th>
+            <th scope="col" rowspen="2" class="text center">Probabilitas  Warga Bukan Penerima</th>
         </tr>
         <tr>
         <th>n</th>
@@ -140,8 +140,8 @@
             <div>
               <h4>Keterangan : </h4>
               
-              <h6>Ny adalah jumlah data mahasiswa terpilih</h6>
-              <h6>Nx Adalah jumlah data mahasiwa BUKAN terpilih</h6>
+              <h6>Ny adalah jumlah data Warga Penerima</h6>
+              <h6>Nx Adalah jumlah data Warga Bukan Penerima</h6>
             </div>
             <hr>
       <?php foreach ($c as $c) { ?> 
@@ -153,10 +153,10 @@
                     <thead class=" text-white">
                       <tr>
                         <th scope="col" rowspen="2" class="align-middle text center"><?= strtoupper($c) ?></th>
-                        <th scope="col" rowspen="2" class="text center">Mahasiswa yang terpilih</th>
-                        <th scope="col" rowspen="2" class="text center">Mahasiswa yang Tidak terpilih</th>
-                        <th scope="col" rowspen="2" class="text center">Probabilitas Mahasiswa yang terpilih</th>
-                        <th scope="col" rowspen="2" class="text center">Probabilitas Mahasiswa yang Tidak terpilih</th>
+                        <th scope="col" rowspen="2" class="text center">Warga Penerima</th>
+                        <th scope="col" rowspen="2" class="text center">Warga Bukan Penerima</th>
+                        <th scope="col" rowspen="2" class="text center">Probabilitas Penerima</th>
+                        <th scope="col" rowspen="2" class="text center">Probabilitas Bukan Penerima</th>
                       
                       </tr>
                       <tr>
@@ -199,38 +199,38 @@
                 
      </div>
      </div>
-                      <h4>DATA CALON status_pkh LABORATORIUM</h4>
+                      <h4>DATA CALON PENERIMA PKH</h4>
                       <table border="5" class="table table-hover">
                         <thead class=" text-white">
                           <tr>
-                            <th rowspan="2" class="align-middle text-center">nama_penerima (<?= $nama_penerima ?>) </th>
-                            <th colspan="2">jml_tanggungan (<?= $jml_tanggungan ?>) </th>
-                            <th colspan="2">kpl_rumah_tangga (<?= $kpl_rumah_tangga ?>) </th>
-                            <th colspan="2">anak_usia_dini(<?= $anak_usia_dini ?>) </th>
-                            <th colspan="2">anak_sekolah (<?= $anak_sekolah ?>) </th>
-                            <th colspan="2">jenis_lantai (<?= $jenis_lantai ?>) </th>
-                            <th colspan="2">jml_penghasilan (<?= $jml_penghasilan ?>) </th>
-                            <th colspan="2">stts_kepemilikan_rumah (<?= $stts_kepemilikan_rumah ?>) </th>
+                          <th rowspan="2" class="align-middle text-center">Nama(<?= $nama_penerima ?>) </th>
+                            <th colspan="2">Jumlah Tanggungan (<?= $jml_tanggungan ?>) </th>
+                            <th colspan="2">kepala Rumah Tangga (<?= $kpl_rumah_tangga ?>) </th>
+                            <th colspan="2">Anak Usia Dini(<?= $anak_usia_dini ?>) </th>
+                            <th colspan="2">Anak Sekolah (<?= $anak_sekolah ?>) </th>
+                            <th colspan="2">Jenis Lantai (<?= $jenis_lantai ?>) </th>
+                            <th colspan="2">Jumlah Penghasilan (<?= $jml_penghasilan ?>) </th>
+                            <th colspan="2">Status Kepemilikan Rumah (<?= $stts_kepemilikan_rumah ?>) </th>
                             <th colspan="2">status_pkh</th>
                           </tr>
                           <tr>
                             
-                          <th>Terpilih</th>
-                            <th>Tidak Terpilih</th>
-                            <th>Terpilih</th>
-                            <th>Tidak Terpilih</th>
-                            <th>Terpilih</th>
-                            <th>Tidak Terpilih</th>
-                            <th>Terpilih</th>
-                            <th>Tidak Terpilih</th>
-                            <th>Terpilih</th>
-                            <th>Tidak Terpilih</th>
-                            <th>Terpilih</th>
-                            <th>Tidak Terpilih</th>
-                            <th>Terpilih</th>
-                            <th>Tidak Terpilih</th>
-                            <th>Terpilih</th>
-                            <th>Tidak Terpilih</th>
+                          <th>Penerima</th>
+                            <th>BUKAN Penerima</th>
+                            <th>Penerima</th>
+                            <th>BUKAN Penerima</th>
+                            <th>Penerima</th>
+                            <th>BUKAN Penerima</th>
+                            <th>Penerima</th>
+                            <th>BUKAN Penerima</th>
+                            <th>Penerima</th>
+                            <th>BUKAN Penerima</th>
+                            <th>Penerima</th>
+                            <th>BUKAN Penerima</th>
+                            <th>Penerima</th>
+                            <th>BUKAN Penerima</th>
+                            <th>Penerima</th>
+                            <th>BUKAN Penerima</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -254,17 +254,17 @@
                             <td><?= $status_pkhBUKAN ?></td>
                           </tr>
                          <?php 
-                        $hasilPENERIMA = (hitung('jml_tanggungan', $jml_tanggungan, 'PENERIMA') / status_pkh('PENERIMA')) * 
-                        (hitung('kpl_rumah_tangga', $kpl_rumah_tangga, 'PENERIMA') / status_pkh('PENERIMA')) * (hitung('anak_usia_dini', $anak_usia_dini, 'PENERIMA') / status_pkh('PENERIMA')) * 
-                        (hitung('anak_sekolah', $anak_sekolah, 'PENERIMA') / status_pkh('PENERIMA')) * (hitung('jenis_lantai', $jenis_lantai, 'PENERIMA') / status_pkh('PENERIMA'))* (hitung('jml_penghasilan', $jml_penghasilan, 'PENERIMA') / status_pkh('PENERIMA'))* (hitung('stts_kepemilikan_rumah', $stts_kepemilikan_rumah, 'PENERIMA') / status_pkh('PENERIMA'));
-                        //$hasilPENERIMA = number_format($hasilPENERIMA, 2, '.', '');
-                       $hasilPENERIMA = $hasilPENERIMA * $status_pkhPENERIMA;
-
-                        $hasilBUKAN = (hitung('jml_tanggungan', $jml_tanggungan, 'BUKAN') / status_pkh('BUKAN')) * 
-                        (hitung('kpl_rumah_tangga', $kpl_rumah_tangga, 'BUKAN') / status_pkh('BUKAN')) * (hitung('anak_usia_dini', $anak_usia_dini, 'BUKAN') / status_pkh('BUKAN')) * 
-                        (hitung('anak_sekolah', $anak_sekolah, 'BUKAN') / status_pkh('BUKAN')) * (hitung('jenis_lantai', $jenis_lantai, 'BUKAN') / status_pkh('BUKAN')) * (hitung('jml_penghasilan', $jml_penghasilan, 'BUKAN') / status_pkh('BUKAN')) * (hitung('stts_kepemilikan_rumah', $stts_kepemilikan_rumah, 'BUKAN') / status_pkh('BUKAN'));
-                        //$hasilBUKAN = number_format($hasilBUKAN, 2, '.', '');
-                        $hasilBUKAN = $hasilBUKAN * $status_pkhBUKAN;
+                         $hasilPENERIMA = (hitung('jml_tanggungan', $jml_tanggungan, 'PENERIMA') / status_pkh('PENERIMA')) * 
+                         (hitung('kpl_rumah_tangga', $kpl_rumah_tangga, 'PENERIMA') / status_pkh('PENERIMA')) * (hitung('anak_usia_dini', $anak_usia_dini, 'PENERIMA') / status_pkh('PENERIMA')) * 
+                         (hitung('anak_sekolah', $anak_sekolah, 'PENERIMA') / status_pkh('PENERIMA')) * (hitung('jenis_lantai', $jenis_lantai, 'PENERIMA') / status_pkh('PENERIMA'))* (hitung('jml_penghasilan', $jml_penghasilan, 'PENERIMA') / status_pkh('PENERIMA'))* (hitung('stts_kepemilikan_rumah', $stts_kepemilikan_rumah, 'PENERIMA') / status_pkh('PENERIMA'));
+                         //$hasilPENERIMA = number_format($hasilPENERIMA, 2, '.', '');
+                         $hasilPENERIMA = $hasilPENERIMA * $status_pkhPENERIMA;
+ 
+                         $hasilBUKAN = (hitung('jml_tanggungan', $jml_tanggungan, 'BUKAN') / status_pkh('BUKAN')) * 
+                         (hitung('kpl_rumah_tangga', $kpl_rumah_tangga, 'BUKAN') / status_pkh('BUKAN')) * (hitung('anak_usia_dini', $anak_usia_dini, 'BUKAN') / status_pkh('BUKAN')) * 
+                         (hitung('anak_sekolah', $anak_sekolah, 'BUKAN') / status_pkh('BUKAN')) * (hitung('jenis_lantai', $jenis_lantai, 'BUKAN') / status_pkh('BUKAN')) * (hitung('jml_penghasilan', $jml_penghasilan, 'BUKAN') / status_pkh('BUKAN')) * (hitung('stts_kepemilikan_rumah', $stts_kepemilikan_rumah, 'BUKAN') / status_pkh('BUKAN'));
+                         //$hasilBUKAN = number_format($hasilBUKAN, 2, '.', '');
+                         $hasilBUKAN = $hasilBUKAN * $status_pkhBUKAN;
 
                         if ($hasilBUKAN > $hasilPENERIMA) {
                           $status_pkh = 'BUKAN';
@@ -295,16 +295,16 @@
                       <table border="5" class="table table-hover mb-5">
                         <thead class=" text-white">
                           <tr>
-                            <th>id_training</th>
-                            <th>nama_penerima</th>
-                            <th>jml_tanggungan</th>
-                            <th>kpl_rumah_tangga</th>
-                            <th>PF</th>
-                            <th>PL1</th>
-                            <th>jenis_lantai</th>
+                          <th>id_hasil</th>
+                            <th>Nama</th>
+                            <th>Jumlah Tanggungan</th>
+                            <th>Kepala Rumah Tangga</th>
+                            <th>Anak Usia Dini</th>
+                            <th>Anak Sekolah</th>
+                            <th>Jenis Lantai</th>
                             <th>Jumlah Penghasilan</th>
                             <th>Status Kepemilikan Rumah
-                            <th>Status Rekomendasi</th>
+                            <th>Status Kelayakan</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -318,7 +318,7 @@
                             <td><?= $jenis_lantai ?></td>
                             <td><?= $jml_penghasilan ?></td>
                             <td><?= $stts_kepemilikan_rumah ?></td>
-                            <td><?= $status_pkh ?></td>
+                            <td><?= $status_pkh ?>/<?php if($status_pkh == "PENERIMA"){ echo "LAYAK";} else { echo "Tidak Layak"; }; ?></td>
                           </tr>
                         </tbody>
                       </table>
